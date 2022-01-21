@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<phpunit bootstrap="vendor/autoload.php" colors="test" verbos="true" stopOnFail="false"  >
+    <testsuites>
+        <php>
+            <ini name="memory_limit" value="-1" />
+        </php>
+        <testsuite name=" Hello Fresh API Test Suite ">
+           <directory>
+               test
+           </directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
